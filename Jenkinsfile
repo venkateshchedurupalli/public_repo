@@ -1,8 +1,9 @@
 pipeline {
     agent any
     tools{
-    maven ' Maven 3.8.6 '
-    jdk 'jdk 1.8.0'}
+    maven 'MAVEN_HOME' 
+      jdk 'JAVA_HOME'
+    }
     
    //  parameters{
      //   choice(name: 'VERSION', choices:['1.1.0','1.2.0','1.3.0'], description: '')
